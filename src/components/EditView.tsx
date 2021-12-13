@@ -55,9 +55,10 @@ const EditView = (props: EditViewProps) => {
 
     return (
       <div
-        className={classNames('inline-edit-edit-view-actions', {
-          'inline-edit-edit-view-actions-placement-top': placement === 'top',
-        })}
+        className={classNames(
+          'inline-edit-edit-view-actions',
+          `inline-edit-edit-view-actions-placement-${placement}`,
+        )}
       >
         <button
           title={confirmText}

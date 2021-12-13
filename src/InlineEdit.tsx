@@ -101,6 +101,7 @@ InlineEdit.defaultProps = {
   hideActions: false,
   confirmText: 'Confirm',
   cancelText: 'Cancel',
+  placement: 'bottom',
 };
 
 export default InlineEdit;

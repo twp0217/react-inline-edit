@@ -1,6 +1,6 @@
 {
   "name": "@twp0217/react-inline-edit",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Inline edit component for React",
   "scripts": {
     "start": "dumi dev",
@@ -8,11 +8,10 @@
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "father-build",
     "deploy": "npm run docs:build && npm run docs:deploy",
+    "release": "npm run build && npm publish --access public",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "prepublishOnly": "npm run build",
-    "publish": "npm publish --access public",
     "commit": "git-cz",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },

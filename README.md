@@ -33,7 +33,7 @@ export default () => {
 ### InlineEditProps
 
 | 名称           | 类型                 | 默认值    | 说明               |
-| -------------- | -------------------- | --------- | ------------------ | ---- |
+| -------------- | -------------------- | --------- | ------------------ |
 | className      | string               | -         | 类名               |
 | style          | React.CSSProperties  | -         | 样式               |
 | keepOpenOnBlur | `boolean`            | `false`   | 失去焦点时保持打开 |
@@ -43,7 +43,7 @@ export default () => {
 | defaultValue   | `string`             | -         | 默认值             |
 | isEditing      | `boolean`            | -         | 是否正在编辑       |
 | loading        | `boolean`            | -         | 加载中             |
-| placement      | `'top'               | 'bottom'` | -                  | 位置 |
+| placement      | `top` \| `bottom`    | -         | 按钮位置           |
 | readView       | `React.ReactNode`    | -         | 查看视图           |
 | editView       | `React.ReactNode`    | -         | 编辑视图           |
 | onEdit         | `() => void`         | -         | 编辑事件           |
