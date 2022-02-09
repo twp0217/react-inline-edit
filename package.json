@@ -1,6 +1,6 @@
 {
   "name": "@twp0217/react-inline-edit",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Inline edit component for React",
   "scripts": {
     "start": "dumi dev",

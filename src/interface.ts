@@ -5,6 +5,7 @@ export type Placement = 'top' | 'bottom';
 export interface InlineEditProps<T = Value> {
   className?: string;
   style?: React.CSSProperties;
+  disabled?: boolean;
   keepOpenOnBlur?: boolean;
   hideActions?: boolean;
   confirmText?: string;

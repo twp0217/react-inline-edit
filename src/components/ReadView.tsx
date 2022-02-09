@@ -1,15 +1,16 @@
 import React from 'react';
 import { InlineEditProps } from '../interface';
+import classNames from 'classnames';
 
-interface ReadViewProps extends Pick<InlineEditProps, 'readView'> {
+interface ReadViewProps extends Pick<InlineEditProps, 'disabled' | 'readView'> {
   onClick: () => void;
 }
 
 const ReadView = (props: ReadViewProps) => {
-  const { readView, onClick } = props;
+  const { disabled, readView, onClick } = props;
 
   return (
-    <div className="inline-edit-read-view-container" onClick={onClick}>
+    <div className={classNames('inline-edit-read-view-container', { disabled })} onClick={onClick}>
       {readView}
     </div>
   );

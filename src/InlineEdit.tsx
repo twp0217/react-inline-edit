@@ -9,6 +9,7 @@ const InlineEdit = (props: InlineEditProps) => {
   const {
     className,
     style,
+    disabled,
     keepOpenOnBlur,
     isEditing: customizeIsEditing,
     readView,
@@ -80,7 +81,7 @@ const InlineEdit = (props: InlineEditProps) => {
 
   return (
     <div className={classNames('inline-edit-container', className)} style={style}>
-      {isEditing ? (
+      {!disabled && isEditing ? (
         <EditView
           {...props}
           onBlur={handleBlur}
@@ -90,7 +91,7 @@ const InlineEdit = (props: InlineEditProps) => {
           onCancel={handleCancel}
         />
       ) : (
-        <ReadView readView={readView} onClick={handleReadViewClick} />
+        <ReadView disabled={disabled} readView={readView} onClick={handleReadViewClick} />
       )}
     </div>
   );

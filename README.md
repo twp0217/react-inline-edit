@@ -36,6 +36,7 @@ export default () => {
 | -------------- | -------------------- | --------- | ------------------ |
 | className      | string               | -         | 类名               |
 | style          | React.CSSProperties  | -         | 样式               |
+| disabled       | `boolean`            | `false`   | 是否禁用           |
 | keepOpenOnBlur | `boolean`            | `false`   | 失去焦点时保持打开 |
 | hideActions    | `boolean`            | `false`   | 是否隐藏操作按钮   |
 | confirmText    | `string`             | `Confirm` | 确认文本           |
